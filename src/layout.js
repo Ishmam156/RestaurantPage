@@ -15,7 +15,7 @@ const initialLayout = () => {
     nav.appendChild(logo);
     const navRight = document.createElement("div");
     navRight.id = "navRight";
-    const links = ["Menu", "Contact", "About"];
+    const links = ["Menu", "Contact"];
     links.forEach((item) => {
       let link = document.createElement("div");
       link.textContent = item;
@@ -38,6 +38,12 @@ const initialLayout = () => {
     imageBanner.appendChild(foodImage);
     content.appendChild(imageBanner);
 
+    mainContent.appendChild(content);
+  };
+
+  const descriptionContent = () => {
+    const content = document.getElementById("mainContent");
+
     const description = document.createElement("div");
     description.id = "description";
 
@@ -50,18 +56,23 @@ const initialLayout = () => {
       "It was a success from the start but quickly became something even bigger... a game changer. We saw what was happening and got excited. Let’s keep going. So we discovered quinoa and expanded the menu to serve a full selection of high-protein salads, wraps, and bowls customizable for all diets. Every body loved it. The all-day power of protein grew in popularity. We all started eating, feeling and moving better. It’s all good.";
     description.appendChild(details);
     content.appendChild(description);
+  };
 
-    mainContent.appendChild(content);
+  const reInitialize = () => {
+    addImageContent();
+    descriptionContent();
   };
 
   const render = () => {
     addNavBar();
     addImageContent();
+    descriptionContent();
   };
 
   return {
     render,
     addImageContent,
+    reInitialize,
   };
 };
 
