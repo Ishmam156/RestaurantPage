@@ -1,0 +1,34 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "restaurant page for The Odin Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ishmam156/RestaurantPage.git"
+  },
+  "keywords": [
+    "theodinproject",
+    "js",
+    "javascript",
+    "module",
+    "html"
+  ],
+  "author": "Ishmam Chowdhury",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ishmam156/RestaurantPage/issues"
+  },
+  "homepage": "https://github.com/Ishmam156/RestaurantPage#readme",
+  "devDependencies": {
+    "webpack": "^5.52.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.2.0"
+  }
+}
