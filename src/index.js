@@ -1,3 +1,5 @@
-import { temp } from "./layout";
+import initialLayout from "./layout";
 
-temp();
+const startLayout = initialLayout();
+
+startLayout.render();
