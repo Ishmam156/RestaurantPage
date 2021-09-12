@@ -1,8 +1,10 @@
 import initialLayout from "./layout";
+import menuLayout from "./menu";
 
-const startLayout = initialLayout();
+const startDisplay = initialLayout();
+const menuDisplay = menuLayout();
 
-startLayout.render();
+startDisplay.render();
 
 document.getElementById("contact").addEventListener("click", () => {
   const mainContent = document.getElementById("mainContent");
@@ -12,8 +14,11 @@ document.getElementById("contact").addEventListener("click", () => {
 document.getElementById("menu").addEventListener("click", () => {
   const mainContent = document.getElementById("mainContent");
   mainContent.remove();
+  menuDisplay.render();
 });
 
 document.getElementById("logo").addEventListener("click", () => {
-  startLayout.reInitialize();
+  const mainContent = document.getElementById("mainContent");
+  mainContent.remove();
+  startDisplay.reInitialize();
 });

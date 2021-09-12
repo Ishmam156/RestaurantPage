@@ -131,14 +131,20 @@ p {
   grid-row-end: 3;
   z-index: 2;
   display: flex;
-  padding: 10px 50px;
+  padding: 0px 50px;
   gap: 10px;
   flex-wrap: wrap;
+  justify-content: center;
   color: #4b6587;
 }
 
 #menuDisplay img {
   width: 150px;
+}
+
+#menuDisplay p {
+  font-size: small;
+  font-weight: 900;
 }
 
 #menuDisplay > div {
@@ -151,6 +157,7 @@ p {
   gap: 10px;
   justify-content: flex-start;
   align-content: center;
+  width: 200px;
 }
 
 #menuTitle {
