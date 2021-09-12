@@ -1,4 +1,4 @@
-import Banner from "./main_banner.png";
+import Banner from "./images/main_banner.png";
 
 const initialLayout = () => {
   const mainContent = document.getElementById("content");
@@ -48,7 +48,7 @@ const initialLayout = () => {
     description.id = "description";
 
     const title = document.createElement("h1");
-    title.textContent = "Chowdhurys Creations!";
+    title.textContent = "Chowdhurys' Creations!";
     description.appendChild(title);
 
     const details = document.createElement("p");

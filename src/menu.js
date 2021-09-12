@@ -1,7 +1,7 @@
 import initialLayout from "./layout";
-import Burger from "./burger.jpeg";
-import Pizza from "./pizza.jpeg";
-import Roll from "./roll.jpeg";
+import Burger from "./images/burger.jpeg";
+import Pizza from "./images/pizza.jpeg";
+import Roll from "./images/roll.jpeg";
 
 const menuLayout = () => {
   const render = () => {
