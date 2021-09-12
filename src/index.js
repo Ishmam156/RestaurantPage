@@ -1,1 +1,3 @@
-console.log("alert");
+import { temp } from "./layout";
+
+temp();
