@@ -10,7 +10,7 @@ You can check out the webpage [here](https://ishmam156.github.io/RestaurantPage)
 
 #### Menu Page
 
-![Website Image](https://imgur.com/jQtKqSl)
+![Website Image](https://i.imgur.com/jQtKqSl.png)
 
 ## Tech Stack
 
