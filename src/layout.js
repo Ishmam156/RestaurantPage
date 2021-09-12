@@ -4,6 +4,7 @@ const initialLayout = () => {
   const mainContent = document.getElementById("content");
 
   const addNavBar = () => {
+    mainContent.innerHTML = "";
     const nav = document.createElement("nav");
     const navLeft = document.createElement("div");
     navLeft.id = "navLeft";
@@ -14,10 +15,11 @@ const initialLayout = () => {
     nav.appendChild(logo);
     const navRight = document.createElement("div");
     navRight.id = "navRight";
-    const links = ["Contact", "Menu", "About Us"];
+    const links = ["Menu", "Contact", "About"];
     links.forEach((item) => {
       let link = document.createElement("div");
       link.textContent = item;
+      link.id = item.toLowerCase();
       navRight.appendChild(link);
     });
     nav.appendChild(navRight);
@@ -26,7 +28,7 @@ const initialLayout = () => {
 
   const addImageContent = () => {
     const content = document.createElement("div");
-    content.classList.add("mainContent");
+    content.id = "mainContent";
 
     const imageBanner = document.createElement("div");
     imageBanner.id = "imageBanner";
@@ -53,13 +55,13 @@ const initialLayout = () => {
   };
 
   const render = () => {
-    mainContent.innerHTML = "";
     addNavBar();
     addImageContent();
   };
 
   return {
     render,
+    addImageContent,
   };
 };
 
