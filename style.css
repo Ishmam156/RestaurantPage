@@ -36,7 +36,7 @@ nav {
   gap: 30px;
 }
 
-.mainContent {
+#mainContent {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -44,8 +44,17 @@ nav {
   width: 100vw;
 }
 
-img {
-  /* height: 100vh; */
+nav #logo,
+nav #navRight div {
+  cursor: pointer;
+}
+
+nav #logo:hover,
+nav #navRight div:hover {
+  text-decoration: underline;
+}
+
+#imageBanner img {
   width: 100vw;
   opacity: 0.9;
   filter: brightness(30%);
@@ -79,6 +88,24 @@ h1 {
   margin: 20px 0px;
 }
 
+h2 {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 5px 0px;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 5px 0px;
+}
+
 p {
   font-size: medium;
   font-style: italic;
@@ -95,4 +122,43 @@ p {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+}
+
+#menuDisplay {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  z-index: 2;
+  display: flex;
+  padding: 10px 50px;
+  gap: 10px;
+  flex-wrap: wrap;
+  color: #4b6587;
+}
+
+#menuDisplay img {
+  width: 150px;
+}
+
+#menuDisplay > div {
+  background-color: #f7f6f2;
+  border-radius: 10px;
+  padding: 15px 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+#menuTitle {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  z-index: 4;
+  justify-self: center;
+  align-self: center;
 }
